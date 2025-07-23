@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tailwindconfig.css">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <header>
@@ -14,12 +21,22 @@
             <div class="Navigation flex items-center justify-between mx-4 md:justify-around">
             <img src="./assets/logo.png" alt="Logo">
             <ul class="flex gap-10">
-                <li class="hidden  md:block"><a href="home.html" class="font-bold">Home</a></li>
-                <li class="hidden md:block"><a href="shop.html" class="font-normal text-[#8987A1]">Shop</a></li>
-                <li class="hidden md:block"><a href="about.html" class="font-normal text-[#8987A1]">About us</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a></li>
+                <li class="hidden  md:block"><a href="home.html" class="font-bold text-base">Home</a></li>
+                <li class="hidden md:block"><a href="shop.html" class="font-normal text-[#8987A1] text-base">Shop</a></li>
+                <li class="hidden md:block"><a href="about.html" class="font-normal text-[#8987A1] text-base">About us</a></li>
+                <li><a href="cart.html " class="text-xl md:text-base" ><i class="fa-solid fa-cart-shopping "></i>Cart ($56)</a></li>
             </ul>
             </div>
+            <section class="banner-section">
+                <div class="banner_container">
+                <h2>ALWAYS<span>FRESH</span></h2>
+                <h3>FLOWERS</h3>
+                <p class="">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.</p>
+                </div>
+                <div class="banner_img">
+                    <img src="./assets/hero-flower.png" alt="">
+                </div>
+            </section>
         </nav>
     </header>
     <main></main>
