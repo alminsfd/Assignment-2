@@ -9,6 +9,10 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
+.sub-tittle-2{
+  font-weight: 400;
+  color: #6B7280;
+}
 .noto-serif-had {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -35,4 +39,7 @@
 }
 .BG-color{
   background-color:#E95A08;
+}
+li{
+  margin: 16px;
 }
