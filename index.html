@@ -14,47 +14,9 @@
     <link rel="stylesheet" href="tailwindconfig.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </head>
 <body>
-    <header>
+       <header>
         <nav>
             <div class="Navigation flex items-center justify-between m-4 md:mx-37 md:my-6 md:justify-between">
             <img src="./assets/logo.png" alt="Logo">
@@ -147,5 +109,26 @@
             </ul>
         </div>
         </section>
-    </main>
+        <section class="Leatest_deal_section md:mt-30 mt-15 md:max-w-[1140px] m-auto">
+            <div class="leatest_describtion md:w-204 m-auto md:mb-30 mb-15 px-2">
+                <h2 class="noto-serif-had header-tittle-2 md:text-5xl text-2xl text-center mb-2 md:mb-4">Latest <span class="header-tittle-1">Deals</span></h2>
+                <p class="inter-sub sub-tittle md:text-xl text-sm text-center mb-2">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+            <div class="Leastes_container grid md:grid-cols-2 grid-cols-1 w-full h-auto gap-3 px-2 md:grid-rows-2">
+                <div class="img_1_container bg-[url('/assets/deal-bloom.png')] bg-cover w-full md:h-[250px] h-46 bg-center flex justify-center items-center flex-col rounded-xl ">
+                <h3 class="noto-serif-had secendary-color font-bold text-xl  ">60% Off | Bloom Plant</h3>
+                <h4 class="underline  text-base inter-sub secendary-color font-semibold">Shop Now</h4>
+                </div>
+                <div class="img_1_container bg-[url('/assets/deal-zabo.png')] bg-cover w-full md:h-auto h-46 bg-center flex justify-center items-center flex-col rounded-xl md:row-span-2">
+                <h3 class="noto-serif-had secendary-color font-bold text-xl md:text-[40px] ">25% Off | Zabo Plant</h3>
+                <h4 class="underline md:text-3xl text-base inter-sub secendary-color font-semibold">Shop Now</h4>
+                </div>
+                <div class="img_1_container bg-[url('/assets/deal-ana.png')] bg-cover w-full md:h-[250px] h-46 bg-center flex justify-center items-center flex-col rounded-xl ">
+                <h3 class="noto-serif-had secendary-color font-bold text-xl  ">30% Off | Ana  Plant</h3>
+                <h4 class="underline  text-base inter-sub secendary-color font-semibold">Shop Now</h4>
+                </div>
+            </div>
+        </section>
+    </main> 
+</body>
 
