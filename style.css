@@ -43,3 +43,12 @@
 li{
   margin: 16px;
 }
+.overlay{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),url('./assets/deal-bloom.png');
+}
+.overlay-2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),url('./assets/deal-zabo.png');
+}
+.overlay-3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)),url('./assets/deal-ana.png');
+}
